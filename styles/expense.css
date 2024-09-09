@@ -1,0 +1,27 @@
+#nav_currentpage {
+    border-bottom: 2px solid white; 
+  }
+  .active {
+    margin: 0px 5px;
+  }
+  .table{
+    /* align: center; */
+    border: 2px;
+    width:100%;
+    line-height:40px;
+    margin-left: 1px;
+    /* text: center; */
+  }
+  .table thead {
+    background-color: dark; 
+    color: white; 
+  }
+  .table th, .table td {
+    border: 1px solid black; 
+    padding: 10px;
+  }
+  .db{
+    width:75%;
+    margin-top: 60px;
+    margin-left:10%;
+  }

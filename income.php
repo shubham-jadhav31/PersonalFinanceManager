@@ -1,15 +1,6 @@
 <?php
-
-session_start();
-
-if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
-{
-    header("location: login.php");
-}
-
-
+include 'session.php';
 ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -23,38 +14,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./styles/income.css">
     <title>Income Page</title>
-
-    <style>
-      #nav_currentpage {
-        border-bottom: 2px solid white; /* Adjust the size and color as needed */
-      }
-      .active {
-        margin: 0px 5px;
-      }
-      .table{
-        align: center;
-        border: 2px;
-        width:100%;
-        line-height:40px;
-        margin-left: 1px;
-        Text: center;
-      }
-      .table thead {
-        background-color: dark; /* Dark background color */
-        color: white; /* Text color for the header row */
-      }
-      .table th, .table td {
-        border: 1px solid black; /* Optional: Add borders to cells */
-        padding: 10px; /* Optional: Add padding to cells */
-      }
-      .db{
-        width:75%;
-        margin-top: 60px;
-        margin-left:10%;
-      }
-    </style>
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">

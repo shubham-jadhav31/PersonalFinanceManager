@@ -1,0 +1,65 @@
+.other_than_nav {
+    margin-top: 65px;
+  }
+  #nav_currentpage {
+    border-bottom: 2px solid white; /* Adjust the size and color as needed */
+  }
+  .active {
+    margin: 0px 5px;
+  }
+  .intro_words {
+    font-size: 30px;
+  }
+  .intro_p {
+    font-size: 20px;
+    font-weight: 450;
+  }
+  img{
+    border-radius: 0.25rem;
+  }
+  .about-heading , .erdiagram{
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+
+  .rounded-container{
+    height: 500px;
+    width: 1000px;
+    padding: 40px;
+    margin-left: 100px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      
+  }
+
+  .box {
+      height: 200px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 10px;
+      flex: 1;
+      border-radius: 5px;
+      border: 1px solid black;
+  }
+  .larger-box {
+      
+  }
+
+  h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+  }
+
+  p {
+      font-size: 1rem;
+  }

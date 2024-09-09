@@ -8,7 +8,7 @@ if(isset($_SESSION['username']))
     header("location: index.php");
     exit;
 }
-require_once "config.php";
+require_once "./config/config.php";
 
 $username = $password = "";
 $err = "";
@@ -77,46 +77,9 @@ if(empty($err))
     <link rel="shortcut icon" type="x-icon" href="./images/slate_gray_logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/login.css">
 
     <title>PHP login system!</title>
-    <style>
-        .other_than_nav {
-        margin-top: 60px;
-        }
-
-        .rounded-container {
-          width: 1300px; /* Set the width of your container */
-          height: 600px; /* Set the height of your container */
-          background-color: #f0f0f0; /* Set the background color */
-          border-radius: 5px; /* Adjust the border-radius to control the roundness of corners */
-          padding: 20px; /* Add padding for content inside the container */
-          display: flex;
-          margin: 80px 60px 80px 70px;
-        }
-        .subcontainer1 {
-          flex: 3;
-        }
-        #banner1 {
-          width: 700px;
-          margin-top: 30px;
-          margin-left: 15px;
-          border-radius: 15px;
-        }
-        .subcontainer2 {
-          margin-top: 40px;
-          padding-left: 20px;
-          margin-bottom: 120px;
-          flex: 2;
-          border-left: 1px solid white;
-        }
-        .form-group {
-          width: 250px;
-        }
-        .registerbtn {
-          margin-left: 40px;
-          margin-top: 30px;
-        }
-    </style>
   </head>
   <body>
 

@@ -1,15 +1,6 @@
 <?php
-
-session_start();
-
-if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
-{
-    header("location: login.php");
-}
-
-
+include 'session.php';
 ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -24,85 +15,9 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- Awesome Inclusion Up Arrow -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    <link rel="stylesheet" href="./styles/bin.css">
 
     <title>Bin Page</title>
-
-    <style>
-      /* body{
-        background-color: #deeeff;
-      } */
-      .other_than_nav {
-        margin-top: 65px;
-        margin-left: 150px;
-        margin-right: 150px;
-      }
-      #nav_currentpage {
-        border-bottom: 2px solid white; /* Adjust the size and color as needed */
-      }
-      .active {
-        margin: 0px 5px;
-      }
-      .rounded-container {
-          width: 1130px; /* Set the width of your container */
-          /* height: 200px; /* Set the height of your container */
-          background-color: #f0f0f0; /* Set the background color */
-          border-radius: 5px; /* Adjust the border-radius to control the roundness of corners */
-          padding: 20px; /* Add padding for content inside the container */
-          display: flex;
-          margin-left: 10%;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-      }
-      
-          
-      .table{
-        align: center;
-        border: 2px;
-        width:100%;
-        line-height:40px;
-        margin-left: 1px;
-        Text: center;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      }
-      .table thead {
-        background-color: dark; /* Dark background color */
-        color: white; /* Text color for the header row */
-      }
-      .table th, .table td {
-        border: 1px solid black; /* Optional: Add borders to cells */
-        padding: 10px; /* Optional: Add padding to cells */
-      }
-
-      /* .db{
-        width:75%;
-        margin-top: 30px;
-        margin-left:10%;
-      } */
-
-      select{
-        width: 100%;
-        height: calc(1.5em + .75rem + 2px);
-        border-radius: 0.25rem;
-      }
-      
-      #btn-back-to-top {
-        position: fixed;
-        bottom: 60px;
-        right: 40px;
-        font-size: 20px;
-        padding: 10px 17px;
-        background-color: #333;
-        border-radius: 50%;
-        display: none;
-      }
-      #btn-back-to-top i {
-        color: #f0f0f0; /* Light gray color */
-      }
-      /* .sticky-header {
-        position: sticky;
-        top: 55px;
-      } */
-
-    </style>
   </head>
   <body>
     
